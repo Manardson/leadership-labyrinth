@@ -524,7 +524,230 @@ export const scenarios: Scenario[] = [
         "impact": { "innovation": 3, "strategy": 2 }
       }
     ]
-  }
+  },
+  {
+    "id": 24,
+    "title": "Product Launch Timing",
+    "description": "Your marketing team recommends delaying the launch of a new product to align with a major industry conference, while your sales team believes launching immediately will give you a competitive edge. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Delay the launch for the conference",
+        "feedback": "This maximizes visibility but risks losing the first-mover advantage.",
+        "impact": { "strategy": 3, "innovation": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Launch immediately",
+        "feedback": "This takes advantage of early demand but risks missing broader marketing opportunities.",
+        "impact": { "strategy": 4, "leadership": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Split the launch into two phases",
+        "feedback": "This balances timing but increases resource strain.",
+        "impact": { "strategy": 2, "teamwork": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Redefine the launch strategy entirely",
+        "feedback": "This could provide a unique advantage but requires significant time and effort.",
+        "impact": { "innovation": 3, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Gather more data before deciding",
+        "feedback": "This ensures a data-driven approach but delays action.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Team Conflict Over Workload",
+    "description": "Two departments are in conflict over workload distribution, with one claiming to be overburdened and the other insisting their tasks are equally challenging. Both are vital to the project. How do you address the issue?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Redistribute workloads more evenly",
+        "feedback": "This fosters fairness but risks disrupting project momentum.",
+        "impact": { "teamwork": 4, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Mediate a discussion between departments",
+        "feedback": "This encourages collaboration but takes time to resolve.",
+        "impact": { "teamwork": 3, "leadership": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Assign an external auditor to review workloads",
+        "feedback": "This provides an objective view but may delay decisions.",
+        "impact": { "strategy": 2, "teamwork": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Focus resources on the overburdened department",
+        "feedback": "This addresses immediate needs but risks alienating the other department.",
+        "impact": { "teamwork": -1, "leadership": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Maintain the current setup and monitor closely",
+        "feedback": "This avoids immediate disruption but risks deepening tensions.",
+        "impact": { "strategy": -1, "teamwork": -2 }
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Customer Data Privacy",
+    "description": "A new regulation requires stricter data privacy compliance. While your legal team suggests investing heavily in compliance measures, your IT team believes minor adjustments are sufficient. What do you do?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Invest heavily in compliance",
+        "feedback": "This ensures regulatory safety but increases costs significantly.",
+        "impact": { "strategy": 3, "leadership": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Make minor adjustments and monitor risks",
+        "feedback": "This saves costs but risks penalties if compliance is inadequate.",
+        "impact": { "strategy": -1, "innovation": -2 }
+      },
+      {
+        "id": "C",
+        "text": "Outsource compliance tasks to a third party",
+        "feedback": "This balances expertise and cost but reduces internal control.",
+        "impact": { "strategy": 2, "teamwork": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Form a cross-functional compliance task force",
+        "feedback": "This promotes collaboration but may slow down implementation.",
+        "impact": { "teamwork": 3, "innovation": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Delay decisions until further clarification of the regulation",
+        "feedback": "This avoids premature investments but risks falling behind competitors.",
+        "impact": { "strategy": -2, "leadership": -1 }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Social Media Backlash",
+    "description": "A promotional post from your company has received unexpected backlash on social media, with users accusing the company of being tone-deaf. Your marketing team suggests taking the post down immediately, while the PR team suggests issuing a formal statement. How do you respond?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Take down the post and remain silent",
+        "feedback": "This avoids further backlash but may appear as if you're ignoring the criticism.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      },
+      {
+        "id": "B",
+        "text": "Issue a formal apology and explain the context",
+        "feedback": "This shows accountability but risks drawing more attention to the issue.",
+        "impact": { "leadership": 3, "teamwork": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Engage with users in the comments to clarify",
+        "feedback": "This promotes dialogue but requires careful and consistent communication.",
+        "impact": { "strategy": 2, "innovation": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Redirect attention with a new campaign",
+        "feedback": "This might diffuse the situation but risks being seen as dismissive.",
+        "impact": { "strategy": 1, "teamwork": -1 }
+      },
+      {
+        "id": "E",
+        "text": "Monitor the situation before acting",
+        "feedback": "This allows for a measured response but risks appearing indecisive.",
+        "impact": { "strategy": -2, "leadership": -1 }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Employee Performance Issue",
+    "description": "A previously high-performing employee has been missing deadlines and delivering subpar work. The HR team suggests initiating a performance improvement plan, while their manager recommends immediate reassignment to a less critical role. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Implement a performance improvement plan",
+        "feedback": "This supports the employee’s growth but may delay immediate results.",
+        "impact": { "leadership": 3, "teamwork": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Reassign the employee to a less critical role",
+        "feedback": "This ensures short-term project success but may demotivate the employee.",
+        "impact": { "strategy": 2, "teamwork": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Combine reassignment with mentoring support",
+        "feedback": "This balances immediate needs with long-term development but requires additional resources.",
+        "impact": { "teamwork": 3, "innovation": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Hold an open conversation to understand their challenges",
+        "feedback": "This builds trust but may not provide an immediate solution.",
+        "impact": { "leadership": 4, "teamwork": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Let the employee resolve issues independently",
+        "feedback": "This tests their self-reliance but risks further delays.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Supplier Negotiation",
+    "description": "Your primary supplier has increased prices due to global shortages. While negotiating for a lower rate might strain the relationship, switching suppliers could delay your operations. What is your course of action?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Negotiate for a better rate",
+        "feedback": "This might reduce costs but risks damaging the relationship with the supplier.",
+        "impact": { "strategy": 3, "innovation": 1 }
+      },
+      {
+        "id": "B",
+        "text": "Accept the increased rate temporarily",
+        "feedback": "This maintains the relationship but impacts profitability.",
+        "impact": { "leadership": 2, "strategy": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Seek alternative suppliers immediately",
+        "feedback": "This promotes competition but risks operational delays.",
+        "impact": { "innovation": 2, "strategy": -2 }
+      },
+      {
+        "id": "D",
+        "text": "Diversify suppliers gradually",
+        "feedback": "This reduces dependency but requires long-term planning.",
+        "impact": { "strategy": 4, "innovation": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Pass the cost to customers",
+        "feedback": "This preserves margins but risks customer dissatisfaction.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      }
+    ]
+  },
+  
 ];
 
 export const getRandomScenario = (): Scenario => {
