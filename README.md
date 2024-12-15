@@ -1,5 +1,11 @@
 # Welcome to Leadership Labyrinth.
 
+Technets has launched a new free Leadership Simulator where every manager big and small can test their pedal to the metal :)
+
+Featuring many recreated situations from the life of managers with over 50 years of combined experience.
+
+Try Sebastian's Leadership Labyrinth Challenge! Do you have the right skills? Muhahahaha
+
 ## Project Setup
 
 Follow these steps:
