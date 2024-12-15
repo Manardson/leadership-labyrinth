@@ -1,47 +1,51 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { getRandomScenario, type Scenario } from "@/data/scenarios";
+import { useToast } from "@/hooks/use-toast";
 
 interface ScenarioCardProps {
-  onDecision: (choice: string) => void;
+  onDecision: (impacts: Record<string, number>) => void;
 }
 
 const ScenarioCard = ({ onDecision }: ScenarioCardProps) => {
   const [hasChosen, setHasChosen] = useState(false);
+  const [currentScenario, setCurrentScenario] = useState<Scenario>(getRandomScenario());
+  const { toast } = useToast();
 
-  const scenario = {
-    title: "Team Conflict Resolution",
-    description: "Two of your senior team members are in disagreement about the project direction. This is causing tension in the team and potentially delaying deliverables.",
-    choices: [
-      {
-        id: "A",
-        text: "Schedule a mediated discussion to find common ground",
-        feedback: "Good choice! Facilitating open communication helps resolve conflicts constructively.",
-      },
-      {
-        id: "B",
-        text: "Make an executive decision and assign clear responsibilities",
-        feedback: "This can be effective but might not address the underlying conflict.",
-      },
-    ],
-  };
-
-  const handleChoice = (choiceId: string) => {
+  const handleChoice = (choice: typeof currentScenario.choices[0]) => {
     setHasChosen(true);
-    onDecision(choiceId);
+    onDecision(choice.impact);
+
+    // Show congratulatory messages for positive impacts
+    Object.entries(choice.impact).forEach(([skill, value]) => {
+      if (value > 0) {
+        toast({
+          title: "Skill Improved!",
+          description: `Your ${skill.charAt(0).toUpperCase() + skill.slice(1)} score has increased by ${value} points!`,
+          duration: 3000,
+        });
+      }
+    });
+
+    // Load new scenario after 2 seconds
+    setTimeout(() => {
+      setCurrentScenario(getRandomScenario());
+      setHasChosen(false);
+    }, 2000);
   };
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold">{scenario.title}</h3>
-      <p className="text-game-foreground/80">{scenario.description}</p>
+      <h3 className="text-lg font-semibold">{currentScenario.title}</h3>
+      <p className="text-game-foreground/80">{currentScenario.description}</p>
       
       <div className="space-y-3 mt-4">
-        {scenario.choices.map((choice) => (
+        {currentScenario.choices.map((choice) => (
           <div key={choice.id} className="space-y-2">
             <Button
               className="w-full justify-start text-left h-auto py-3 px-4 text-white"
               variant={hasChosen ? "secondary" : "default"}
-              onClick={() => handleChoice(choice.id)}
+              onClick={() => handleChoice(choice)}
               disabled={hasChosen}
             >
               {choice.text}

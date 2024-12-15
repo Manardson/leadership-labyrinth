@@ -25,6 +25,7 @@ const StatsChart = ({ stats }: StatsChartProps) => {
               backgroundColor: '#1F2937',
               border: '1px solid #374151',
               borderRadius: '8px',
+              color: '#FFFFFF'
             }}
           />
           <Line

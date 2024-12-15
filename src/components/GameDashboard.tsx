@@ -26,6 +26,17 @@ const GameDashboard = () => {
     { title: "Innovation Index", value: stats.innovation, icon: ChartBar },
   ];
 
+  const handleDecision = (impacts: Record<string, number>) => {
+    setStats(prev => {
+      const newStats = { ...prev };
+      Object.entries(impacts).forEach(([skill, value]) => {
+        const currentValue = newStats[skill as keyof GameStats];
+        newStats[skill as keyof GameStats] = Math.min(100, Math.max(0, currentValue + value));
+      });
+      return newStats;
+    });
+  };
+
   return (
     <div className="p-6 bg-white min-h-screen text-gray-900 animate-fade-in">
       <h1 className="text-3xl font-bold mb-8 text-gray-900">Leadership Simulator</h1>
@@ -54,13 +65,7 @@ const GameDashboard = () => {
 
         <Card className="p-6 bg-white border-gray-200">
           <h2 className="text-xl font-semibold mb-4 text-gray-900">Current Scenario</h2>
-          <ScenarioCard onDecision={(choice) => {
-            setStats(prev => ({
-              ...prev,
-              leadership: Math.min(100, prev.leadership + (choice === 'A' ? 5 : -2)),
-              teamwork: Math.min(100, prev.teamwork + (choice === 'B' ? 5 : -2)),
-            }));
-          }} />
+          <ScenarioCard onDecision={handleDecision} />
         </Card>
       </div>
     </div>
