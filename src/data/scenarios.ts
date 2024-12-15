@@ -1487,6 +1487,191 @@ export const scenarios: Scenario[] = [
       }
     ]
   },
+  {
+    "id": 50,
+    "title": "Sustainability vs. Profit Margins",
+    "description": "Your company has been offered an opportunity to transition to renewable energy sources for operations, which would reduce environmental impact but increase costs by 10%. Leadership is divided on whether to proceed. How do you decide?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Adopt renewable energy sources immediately",
+        "feedback": "This strengthens your sustainability credentials but reduces short-term profits.",
+        "impact": { "strategy": -1, "leadership": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Phase in renewable energy gradually",
+        "feedback": "This balances cost and sustainability but delays the full impact.",
+        "impact": { "strategy": 3, "innovation": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Maintain current energy sources and offset emissions",
+        "feedback": "This reduces environmental impact without high costs but may be seen as superficial.",
+        "impact": { "strategy": 2, "leadership": -1 }
+      },
+      {
+        "id": "D",
+        "text": "Focus on energy efficiency instead of renewables",
+        "feedback": "This minimizes costs but misses the opportunity to lead in sustainability.",
+        "impact": { "strategy": 1, "innovation": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Delay the decision until more data is available",
+        "feedback": "This avoids immediate costs but risks losing credibility in sustainability.",
+        "impact": { "strategy": -2, "leadership": -2 }
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Diversity in Promotions",
+    "description": "An open leadership position has multiple qualified candidates, including one who would improve team diversity and another with more experience. Senior staff is divided on the selection criteria. What is your decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Promote the experienced candidate",
+        "feedback": "This ensures immediate results but misses an opportunity to enhance diversity.",
+        "impact": { "leadership": 3, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Promote the diverse candidate",
+        "feedback": "This encourages inclusivity but may require additional training and support.",
+        "impact": { "leadership": 2, "innovation": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Create a mentorship plan for the diverse candidate",
+        "feedback": "This prepares future leadership but delays immediate diversity in senior roles.",
+        "impact": { "teamwork": 4, "leadership": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Split the responsibilities between the candidates",
+        "feedback": "This allows both to contribute but risks diluting accountability.",
+        "impact": { "strategy": 1, "teamwork": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Delay the decision to explore more candidates",
+        "feedback": "This provides more options but prolongs the vacancy.",
+        "impact": { "strategy": -2, "leadership": -1 }
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Crisis Advertising Response",
+    "description": "A recent advertising campaign has unintentionally offended a segment of your audience. Marketing suggests quickly retracting the campaign, while PR advises issuing a public apology and continuing. What is your decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Retract the campaign immediately",
+        "feedback": "This minimizes further offense but might appear reactive.",
+        "impact": { "leadership": 4, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Issue a public apology and continue the campaign",
+        "feedback": "This shows accountability but risks ongoing backlash.",
+        "impact": { "leadership": 3, "teamwork": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Redirect resources to launch a new campaign",
+        "feedback": "This shifts focus but increases costs significantly.",
+        "impact": { "strategy": -1, "innovation": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Consult with affected audiences for input on the response",
+        "feedback": "This promotes inclusivity but may delay action.",
+        "impact": { "teamwork": 4, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Ignore the backlash and continue as planned",
+        "feedback": "This avoids immediate costs but risks long-term reputational damage.",
+        "impact": { "strategy": -2, "leadership": -3 }
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Office Space Utilization",
+    "description": "Post-pandemic, much of your office space is unused due to remote work policies. Options include subleasing the extra space, redesigning for collaboration, or keeping it for future growth. What is your choice?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Sublease the extra space",
+        "feedback": "This generates income but limits flexibility for future needs.",
+        "impact": { "strategy": 3, "teamwork": -1 }
+      },
+      {
+        "id": "B",
+        "text": "Redesign the office for collaboration",
+        "feedback": "This improves teamwork but requires upfront costs.",
+        "impact": { "teamwork": 4, "leadership": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Keep the space as is for future growth",
+        "feedback": "This ensures readiness but incurs ongoing costs.",
+        "impact": { "strategy": -1, "teamwork": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Offer the space for community events",
+        "feedback": "This enhances community relations but might disrupt operations.",
+        "impact": { "leadership": 3, "teamwork": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Fully embrace remote work and eliminate the office",
+        "feedback": "This reduces costs significantly but risks team cohesion.",
+        "impact": { "strategy": 4, "teamwork": -2 }
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Product Recall Decision",
+    "description": "A safety issue has been identified in one of your products after a customer complaint. Your legal team advises against a recall unless more evidence emerges, while the operations team supports a voluntary recall. What is your response?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Initiate a voluntary recall immediately",
+        "feedback": "This demonstrates accountability but incurs significant costs.",
+        "impact": { "leadership": 4, "strategy": 1 }
+      },
+      {
+        "id": "B",
+        "text": "Wait for more evidence before deciding",
+        "feedback": "This avoids unnecessary costs but might harm customer trust.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      },
+      {
+        "id": "C",
+        "text": "Improve quality checks for future products",
+        "feedback": "This addresses long-term risks but doesn’t resolve the current issue.",
+        "impact": { "innovation": 2, "strategy": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Contact affected customers directly and offer replacements",
+        "feedback": "This balances costs and customer satisfaction but risks media scrutiny.",
+        "impact": { "teamwork": 3, "leadership": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Issue a public statement acknowledging the issue",
+        "feedback": "This builds transparency but doesn’t fully resolve customer concerns.",
+        "impact": { "leadership": 3, "strategy": 2 }
+      }
+    ]
+  },
   
 ];
 
