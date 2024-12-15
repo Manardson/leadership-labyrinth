@@ -75,7 +75,7 @@ export const scenarios: Scenario[] = [
   },
   {
     id: 4,
-    title: "Client Satisfaction vs. Team Morale",
+    title: "Gigantic Client",
     description: "A major client has requested last-minute changes to a project, requiring extra hours from your team. While fulfilling the request could secure a long-term partnership and additional revenue, the team is already working at capacity and showing signs of burnout. Pushing them harder could risk mistakes and resentment, while declining the request might damage the client relationship. You need to weigh short-term sacrifices against long-term sustainability for both your team and the business.",
     choices: [
       {
@@ -89,6 +89,439 @@ export const scenarios: Scenario[] = [
         text: "Protect the team’s workload",
         feedback: "Preserving morale fosters loyalty and reduces errors but risks disappointing a key client. Communicating openly with the client might mitigate this.",
         impact: { teamwork: 5, strategy: -2 }
+      }
+    ]
+  },
+  {
+    id: 5,
+    title: "New Market Expansion",
+    description: "Your company is considering entering a new international market with significant potential but also considerable risks. Some of your team members are enthusiastic, highlighting the opportunity for growth, while others caution against the lack of local expertise and regulatory challenges. The decision is time-sensitive as competitors are also eyeing the same market. Do you take the leap, or focus on strengthening your position in current markets?",
+    choices: [
+      {
+        id: "A",
+        text: "Enter the new market",
+        feedback: "This bold move could pay off with significant growth, but it requires strong planning and resource allocation to mitigate risks.",
+        impact: { strategy: 5, innovation: 3 }
+      },
+      {
+        id: "B",
+        text: "Focus on existing markets",
+        feedback: "Staying within known markets ensures stability but could mean missed opportunities and lost market share to competitors.",
+        impact: { strategy: 2, leadership: -1 }
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "Diversity and Inclusion Initiative",
+    description: "You’ve identified a lack of diversity in your team, which has resulted in limited perspectives and less innovative solutions. A proposal has been made to implement a company-wide diversity and inclusion program, but it will require significant time and resources. Some senior members support the initiative, while others are concerned about the potential disruption to productivity. How do you proceed?",
+    choices: [
+      {
+        id: "A",
+        text: "Launch the diversity initiative",
+        feedback: "This long-term investment could foster innovation and improve team dynamics, but it needs careful planning to avoid disruptions.",
+        impact: { leadership: 4, innovation: 3 }
+      },
+      {
+        id: "B",
+        text: "Delay the initiative",
+        feedback: "Delaying minimizes immediate disruptions but risks perpetuating existing problems and missed opportunities for growth.",
+        impact: { leadership: -2, teamwork: -1 }
+      }
+    ]
+  },
+  {
+    id: 7,
+    title: "Technology Upgrade?",
+    description: "A new software solution has been recommended to improve efficiency and reduce errors in your operations. However, the initial cost and time required for implementation are substantial. The team is divided, with some pushing for the upgrade and others worried about the learning curve and potential downtime. Do you invest in the upgrade or stick with the current system?",
+    choices: [
+      {
+        id: "A",
+        text: "Invest in the upgrade",
+        feedback: "This could significantly improve efficiency but requires strong change management to ensure a smooth transition.",
+        impact: { innovation: 4, strategy: 3 }
+      },
+      {
+        id: "B",
+        text: "Stick with the current system",
+        feedback: "This avoids immediate costs and disruptions but could result in stagnation and missed opportunities for improvement.",
+        impact: { strategy: -1, innovation: -2 }
+      }
+    ]
+  },
+  {
+    id: 8,
+    title: "Product",
+    description: "A product defect has been discovered shortly after launch, causing dissatisfaction among early adopters. While the issue can be resolved with a patch, news has spread on social media, and your team is under pressure to respond. Do you publicly address the issue immediately, or work on a solution first before making an announcement?",
+    choices: [
+      {
+        id: "A",
+        text: "Address the issue immediately",
+        feedback: "Transparency builds trust, but it requires careful communication to manage the narrative effectively.",
+        impact: { leadership: 3, strategy: 2 }
+      },
+      {
+        id: "B",
+        text: "Work on a solution first",
+        feedback: "Delivering a fix with your message demonstrates competence, but the delay might damage trust among customers.",
+        impact: { strategy: 4, teamwork: 1 }
+      }
+    ]
+  },
+  {
+    id: 9,
+    title: "Remote Work Policy",
+    description: "Your company is considering a permanent remote work policy following a successful trial period during the pandemic. While many employees value the flexibility, others miss the collaboration of in-person work. Senior leadership is divided, and you must decide whether to adopt remote work fully, return to the office, or implement a hybrid approach.",
+    choices: [
+      {
+        id: "A",
+        text: "Adopt a hybrid model",
+        feedback: "This balances flexibility and collaboration but requires clear policies and communication to manage effectively.",
+        impact: { leadership: 4, teamwork: 3 }
+      },
+      {
+        id: "B",
+        text: "Return fully to the office",
+        feedback: "This fosters collaboration but risks losing employees who value flexibility and could damage morale.",
+        impact: { teamwork: -2, strategy: 1 }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Sustainability Initiative",
+    "description": "Your company is considering investing in a sustainability initiative to reduce its carbon footprint. While this aligns with long-term environmental goals, it requires significant upfront costs. Some team members are excited about the initiative, while others are concerned about the financial strain and impact on short-term profitability.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Pursue the initiative",
+        "feedback": "This demonstrates social responsibility and aligns with future trends, but it requires careful financial planning.",
+        "impact": { "leadership": 5, "strategy": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Delay the initiative",
+        "feedback": "This preserves financial stability but risks falling behind competitors adopting sustainable practices.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Department Merger",
+    "description": "Two departments in your company are being merged to streamline operations. However, the integration has led to confusion about roles and responsibilities, and tensions are rising between team members. You need to decide how to handle the transition.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Hold a joint meeting to clarify roles",
+        "feedback": "This helps address confusion and ensures alignment but requires skilled facilitation to avoid further conflicts.",
+        "impact": { "teamwork": 4, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Appoint a transition leader",
+        "feedback": "Having a single point of leadership can provide clarity but might alienate some employees if perceived as favoritism.",
+        "impact": { "leadership": 5, "teamwork": -1 }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Product Launch Dilemma",
+    "description": "A new product is scheduled to launch in two weeks, but testing has revealed minor defects that could affect customer satisfaction. Fixing the defects would delay the launch, while proceeding as planned could lead to negative reviews.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Delay the launch",
+        "feedback": "Ensuring product quality builds long-term trust but risks losing momentum and market interest.",
+        "impact": { "strategy": 4, "innovation": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Launch as scheduled",
+        "feedback": "This maintains momentum but risks damaging your brand reputation if defects are widely reported.",
+        "impact": { "innovation": -1, "strategy": -2 }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Employee Retention Crisis",
+    "description": "A key employee has received an offer from a competitor and is considering leaving. Losing them could disrupt ongoing projects and morale. Do you counter the offer or let them go?","
+    "choices": [
+      {
+        "id": "A",
+        "text": "Counter the offer",
+        "feedback": "Retaining the employee ensures continuity but may set a precedent for others to negotiate raises.",
+        "impact": { "leadership": 3, "teamwork": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Let them go",
+        "feedback": "This allows for fresh talent and avoids disrupting pay structures but risks project delays and reduced morale.",
+        "impact": { "teamwork": -2, "strategy": -1 }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Partnership Opportunity",
+    "description": "A potential partner has approached your company with an offer to collaborate on a project. While the partnership could lead to significant opportunities, it requires sharing resources and may create dependencies.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Accept the partnership",
+        "feedback": "This opens doors for growth and innovation but requires clear agreements to manage dependencies.",
+        "impact": { "strategy": 5, "innovation": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Decline the partnership",
+        "feedback": "This avoids dependencies but may close off valuable opportunities for expansion.",
+        "impact": { "strategy": -2, "innovation": -1 }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Budget Reallocation",
+    "description": "Midway through the fiscal year, you discover an opportunity to invest in a high-potential project. However, funding it would require cutting budgets for other departments, which could affect their performance.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Reallocate the budget",
+        "feedback": "This prioritizes high-impact projects but risks resentment and underperformance in affected departments.",
+        "impact": { "strategy": 4, "leadership": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Stick to the existing budget",
+        "feedback": "This maintains stability but could mean missing out on a transformative opportunity.",
+        "impact": { "strategy": -1, "innovation": -2 }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Cultural Integration",
+    "description": "Your company has acquired a smaller firm, and integrating the two cultures has proven challenging. Employees from both organizations are struggling to adapt, leading to decreased morale and productivity.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Host team-building workshops",
+        "feedback": "This fosters collaboration and understanding but requires time and resources to implement effectively.",
+        "impact": { "teamwork": 4, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Enforce a unified culture",
+        "feedback": "This creates consistency but risks alienating employees who feel their identity is being overlooked.",
+        "impact": { "leadership": 5, "teamwork": -1 }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Crisis Management",
+    "description": "An unexpected economic downturn has significantly reduced your company’s revenue. You must decide whether to lay off staff to cut costs or find alternative ways to save money without impacting the workforce.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Implement layoffs",
+        "feedback": "This ensures short-term financial stability but impacts morale and trust.",
+        "impact": { "strategy": 4, "leadership": -2 }
+      },
+      {
+        "id": "B",
+        "text": "Explore alternative savings",
+        "feedback": "This maintains morale but requires creative thinking and potential sacrifices in other areas.",
+        "impact": { "leadership": 5, "teamwork": 3 }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Training Program Decision",
+    "description": "A proposal for a company-wide training program has been presented, aiming to upskill employees and improve efficiency. However, the program is expensive and would take time away from daily operations.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Approve the training program",
+        "feedback": "This enhances skills and long-term productivity but requires careful scheduling to minimize disruptions.",
+        "impact": { "innovation": 4, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Reject the training program",
+        "feedback": "This avoids short-term disruptions but risks falling behind in employee capabilities.",
+        "impact": { "strategy": -2, "innovation": -1 }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Public Relations Crisis",
+    "description": "A senior executive's controversial statement has gone viral, sparking backlash from customers and stakeholders. You need to decide whether to issue a public apology or quietly address the issue internally.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Issue a public apology",
+        "feedback": "This demonstrates accountability but might draw more attention to the issue.",
+        "impact": { "leadership": 3, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Handle it internally",
+        "feedback": "This minimizes public attention but risks appearing unaccountable if the issue resurfaces.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Product Quality Compromise",
+    "description": "Your manufacturing team has identified a flaw in a recently produced batch of products. The flaw is minor but visible to attentive customers. Addressing the issue will delay delivery and increase costs. Do you address the issue or proceed with distribution?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Delay delivery and fix the flaw",
+        "feedback": "This ensures quality but risks customer frustration due to delays.",
+        "impact": { "strategy": 3, "leadership": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Proceed with the current batch",
+        "feedback": "This saves time but risks damaging your brand reputation.",
+        "impact": { "strategy": -1, "innovation": -2 }
+      },
+      {
+        "id": "C",
+        "text": "Offer a discount for the flawed batch",
+        "feedback": "This could mitigate customer dissatisfaction but sets a precedent for reduced quality.",
+        "impact": { "teamwork": -1, "strategy": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Split the batch and fix critical issues only",
+        "feedback": "This minimizes delays but may lead to inconsistent customer experiences.",
+        "impact": { "leadership": 1, "teamwork": -1 }
+      },
+      {
+        "id": "E",
+        "text": "Engage with customers directly and explain",
+        "feedback": "This builds trust but requires careful communication to avoid backlash.",
+        "impact": { "strategy": 2, "leadership": 3 }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Market Expansion Strategy",
+    "description": "Your company has the opportunity to enter a highly competitive international market. While it promises high returns, it also requires a significant upfront investment and comes with regulatory hurdles. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Invest fully in entering the market",
+        "feedback": "This could lead to high rewards but requires managing substantial risks.",
+        "impact": { "strategy": 5, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Conduct a small-scale pilot first",
+        "feedback": "This minimizes risks but may delay realizing full potential.",
+        "impact": { "strategy": 4, "innovation": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Collaborate with a local partner",
+        "feedback": "This mitigates risks but reduces potential profit margins.",
+        "impact": { "teamwork": 3, "strategy": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Focus on current markets instead",
+        "feedback": "This ensures stability but may result in missed opportunities.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      },
+      {
+        "id": "E",
+        "text": "Research further before committing",
+        "feedback": "This gives you more data but risks losing first-mover advantage.",
+        "impact": { "innovation": 1, "strategy": 1 }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Diversity in Leadership",
+    "description": "A leadership position has opened up in your company, and you’re considering candidates. One candidate brings extensive experience, while another adds diversity and fresh perspectives but has less experience. Which candidate do you choose?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Choose the experienced candidate",
+        "feedback": "This ensures immediate results but risks missing long-term innovation opportunities.",
+        "impact": { "leadership": 3, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Choose the diverse candidate",
+        "feedback": "This encourages innovation but requires more training and support initially.",
+        "impact": { "leadership": 2, "innovation": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Split leadership responsibilities between them",
+        "feedback": "This promotes collaboration but might dilute accountability.",
+        "impact": { "teamwork": 3, "strategy": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Reopen the hiring process",
+        "feedback": "This could bring in more options but delays filling the role.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      },
+      {
+        "id": "E",
+        "text": "Create a mentorship role for the diverse candidate",
+        "feedback": "This balances experience and fresh perspectives but adds additional workload.",
+        "impact": { "leadership": 4, "teamwork": 2 }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Crisis Budget Cuts",
+    "description": "A sudden economic downturn forces your company to cut costs. You must decide which department's budget to reduce. Each option has significant implications for future performance.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Cut marketing budget",
+        "feedback": "This saves costs but might reduce brand visibility and sales.",
+        "impact": { "strategy": -1, "innovation": -2 }
+      },
+      {
+        "id": "B",
+        "text": "Cut R&D budget",
+        "feedback": "This preserves current operations but risks losing future innovations.",
+        "impact": { "strategy": -2, "innovation": -3 }
+      },
+      {
+        "id": "C",
+        "text": "Cut operational expenses",
+        "feedback": "This reduces immediate waste but could impact efficiency.",
+        "impact": { "leadership": 1, "teamwork": -1 }
+      },
+      {
+        "id": "D",
+        "text": "Implement across-the-board cuts",
+        "feedback": "This spreads the burden equally but might demoralize employees.",
+        "impact": { "teamwork": -2, "leadership": -1 }
+      },
+      {
+        "id": "E",
+        "text": "Explore alternative revenue streams",
+        "feedback": "This avoids cuts but may not yield immediate results.",
+        "impact": { "innovation": 3, "strategy": 2 }
       }
     ]
   }
