@@ -747,6 +747,376 @@ export const scenarios: Scenario[] = [
       }
     ]
   },
+  {
+    "id": 30,
+    "title": "Merger Communication Strategy",
+    "description": "Your company is merging with a smaller competitor. While the merger presents great opportunities, employees are anxious about their roles and future. Some leaders suggest addressing concerns immediately, while others prefer waiting until decisions are finalized. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Address concerns immediately",
+        "feedback": "This builds trust but risks spreading incomplete information.",
+        "impact": { "leadership": 4, "teamwork": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Wait until decisions are finalized",
+        "feedback": "This avoids misinformation but risks escalating employee anxiety.",
+        "impact": { "strategy": 2, "teamwork": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Host regular updates during the process",
+        "feedback": "This provides transparency but requires consistent communication efforts.",
+        "impact": { "leadership": 5, "teamwork": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Focus communication only on senior staff",
+        "feedback": "This ensures alignment among key leaders but risks alienating other employees.",
+        "impact": { "leadership": 3, "teamwork": -2 }
+      },
+      {
+        "id": "E",
+        "text": "Engage an external consultant for communication",
+        "feedback": "This provides expertise but may feel impersonal to employees.",
+        "impact": { "strategy": 3, "teamwork": 1 }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Office Relocation Decision",
+    "description": "Your current office lease is ending, and you must decide whether to move to a smaller, cost-efficient office, a more prestigious downtown location, or fully embrace remote work. Each option has financial and cultural implications. What’s your choice?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Move to a smaller, cost-efficient office",
+        "feedback": "This saves money but might reduce team collaboration and morale.",
+        "impact": { "strategy": 3, "leadership": -1 }
+      },
+      {
+        "id": "B",
+        "text": "Relocate to a prestigious downtown office",
+        "feedback": "This enhances brand reputation but significantly increases costs.",
+        "impact": { "strategy": -2, "leadership": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Adopt a fully remote work model",
+        "feedback": "This reduces costs but risks team cohesion and collaboration.",
+        "impact": { "teamwork": -2, "strategy": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Implement a hybrid workspace",
+        "feedback": "This balances flexibility and in-person interaction but requires careful management.",
+        "impact": { "leadership": 4, "teamwork": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Extend the current lease temporarily",
+        "feedback": "This allows more time to decide but delays a long-term solution.",
+        "impact": { "strategy": -1, "teamwork": 1 }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "New Technology Adoption",
+    "description": "Your company has the opportunity to adopt a cutting-edge technology that promises to improve efficiency but requires significant training and upfront investment. How do you approach the decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Adopt the technology immediately",
+        "feedback": "This positions the company as a leader but risks overwhelming the team.",
+        "impact": { "innovation": 5, "teamwork": -2 }
+      },
+      {
+        "id": "B",
+        "text": "Conduct a pilot program first",
+        "feedback": "This minimizes risks but delays company-wide benefits.",
+        "impact": { "strategy": 4, "innovation": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Wait for competitors to adopt it first",
+        "feedback": "This reduces risks but could result in lost opportunities.",
+        "impact": { "strategy": -2, "innovation": -1 }
+      },
+      {
+        "id": "D",
+        "text": "Provide comprehensive training before adoption",
+        "feedback": "This ensures team readiness but significantly increases costs.",
+        "impact": { "teamwork": 3, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Invest in alternatives to the technology",
+        "feedback": "This reduces dependency but might result in inefficiencies compared to competitors.",
+        "impact": { "innovation": -1, "leadership": 2 }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Diversity Hiring Goal",
+    "description": "Your company has committed to improving diversity but is struggling to meet hiring goals. Some suggest prioritizing diversity over experience in recruitment, while others emphasize finding the most qualified candidates regardless of diversity. How do you approach this issue?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Prioritize diversity in hiring decisions",
+        "feedback": "This aligns with goals but might require additional training for new hires.",
+        "impact": { "leadership": 3, "innovation": 4 }
+      },
+      {
+        "id": "B",
+        "text": "Focus on qualifications over diversity",
+        "feedback": "This ensures immediate capability but risks falling short of diversity goals.",
+        "impact": { "strategy": 2, "leadership": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Combine diversity with mentorship programs",
+        "feedback": "This creates long-term impact but requires significant time and resources.",
+        "impact": { "teamwork": 4, "leadership": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Delay hiring until more diverse candidates are available",
+        "feedback": "This emphasizes diversity but risks delays in meeting company needs.",
+        "impact": { "strategy": -1, "teamwork": -2 }
+      },
+      {
+        "id": "E",
+        "text": "Set clear diversity targets without compromising qualifications",
+        "feedback": "This balances both priorities but requires careful planning.",
+        "impact": { "leadership": 5, "strategy": 2 }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Handling an Industry Rumor",
+    "description": "A rumor about your company’s financial instability is circulating in the industry. Your board is divided on whether to issue a public statement or let the rumor die naturally. How do you address this?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Issue a public statement denying the rumor",
+        "feedback": "This clarifies the situation but risks drawing more attention to it.",
+        "impact": { "leadership": 3, "strategy": 1 }
+      },
+      {
+        "id": "B",
+        "text": "Stay silent and monitor the situation",
+        "feedback": "This avoids fueling the rumor but may appear as confirmation to some.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      },
+      {
+        "id": "C",
+        "text": "Engage with key stakeholders directly",
+        "feedback": "This reassures important allies but requires additional effort.",
+        "impact": { "teamwork": 3, "leadership": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Launch a positive PR campaign",
+        "feedback": "This redirects attention but might not directly address the issue.",
+        "impact": { "strategy": 2, "innovation": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Investigate the source of the rumor",
+        "feedback": "This could uncover valuable information but delays immediate action.",
+        "impact": { "strategy": 3, "teamwork": 1 }
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Sustainability vs. Cost Efficiency",
+    "description": "Your company is evaluating whether to adopt a new sustainable production method that aligns with environmental goals but increases production costs. While this could enhance your brand image, it could also reduce profit margins. What is your decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Adopt the sustainable method immediately",
+        "feedback": "This reinforces environmental commitment but puts financial pressure on the company.",
+        "impact": { "strategy": -1, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Delay adoption and explore subsidies",
+        "feedback": "This minimizes cost impact but may delay achieving sustainability goals.",
+        "impact": { "strategy": 3, "innovation": 1 }
+      },
+      {
+        "id": "C",
+        "text": "Adopt partially for key products",
+        "feedback": "This balances costs and sustainability but complicates operations.",
+        "impact": { "strategy": 2, "teamwork": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Reject the sustainable method for now",
+        "feedback": "This preserves profits but could harm brand reputation.",
+        "impact": { "strategy": 1, "leadership": -2 }
+      },
+      {
+        "id": "E",
+        "text": "Launch a pilot program",
+        "feedback": "This provides data for long-term decisions but delays broad implementation.",
+        "impact": { "innovation": 2, "strategy": 2 }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "New Office Design",
+    "description": "Your company is redesigning its office to reflect modern workplace trends. While open-office layouts promote collaboration, some employees prefer private spaces for focus. You must decide on a design strategy.",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Implement a fully open-office layout",
+        "feedback": "This promotes collaboration but may disrupt focus for some employees.",
+        "impact": { "teamwork": 4, "innovation": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Design a mix of open spaces and private offices",
+        "feedback": "This balances collaboration and focus but requires higher costs.",
+        "impact": { "leadership": 5, "strategy": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Prioritize private spaces with minimal collaboration areas",
+        "feedback": "This supports focus but risks reducing teamwork opportunities.",
+        "impact": { "teamwork": -2, "strategy": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Conduct an employee survey before deciding",
+        "feedback": "This ensures employee buy-in but delays implementation.",
+        "impact": { "teamwork": 3, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Hire an external consultant for a neutral design plan",
+        "feedback": "This provides expertise but may feel impersonal to employees.",
+        "impact": { "strategy": 3, "teamwork": 2 }
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Team Productivity Monitoring",
+    "description": "Your company is considering implementing productivity monitoring tools to track remote employees’ work habits. While some see this as improving accountability, others view it as invasive. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Implement the tools with transparency",
+        "feedback": "This improves accountability but may reduce trust among employees.",
+        "impact": { "leadership": 3, "teamwork": -2 }
+      },
+      {
+        "id": "B",
+        "text": "Focus on outcome-based performance reviews instead",
+        "feedback": "This maintains trust but might not address accountability concerns.",
+        "impact": { "leadership": 4, "strategy": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Use monitoring tools selectively for critical projects",
+        "feedback": "This balances needs but risks appearing inconsistent.",
+        "impact": { "strategy": 3, "teamwork": -1 }
+      },
+      {
+        "id": "D",
+        "text": "Conduct a trial with employee feedback",
+        "feedback": "This encourages collaboration but delays full implementation.",
+        "impact": { "teamwork": 3, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Reject monitoring tools entirely",
+        "feedback": "This upholds trust but could fail to address productivity concerns.",
+        "impact": { "teamwork": 2, "strategy": -1 }
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "AI Integration",
+    "description": "A new AI system could optimize customer support processes by automating responses, but it may result in layoffs and concerns among employees. What is your decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Adopt the AI system fully",
+        "feedback": "This improves efficiency but risks employee morale.",
+        "impact": { "strategy": 4, "innovation": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Integrate AI with a focus on augmentation, not replacement",
+        "feedback": "This preserves jobs but reduces potential cost savings.",
+        "impact": { "teamwork": 3, "strategy": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Delay adoption to provide training",
+        "feedback": "This minimizes layoffs but delays efficiency improvements.",
+        "impact": { "strategy": 2, "innovation": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Adopt partially in low-risk areas",
+        "feedback": "This balances risks and rewards but limits immediate benefits.",
+        "impact": { "strategy": 3, "teamwork": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Avoid AI adoption entirely",
+        "feedback": "This maintains employee trust but risks falling behind competitors.",
+        "impact": { "strategy": -2, "innovation": -3 }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Customer Loyalty Program",
+    "description": "Your company is planning a loyalty program to reward repeat customers, but the finance team is concerned about potential revenue losses. Marketing believes it will increase lifetime customer value. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Launch the loyalty program as proposed",
+        "feedback": "This builds customer loyalty but increases short-term costs.",
+        "impact": { "leadership": 3, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Test the program with select customers",
+        "feedback": "This minimizes risks but delays broader benefits.",
+        "impact": { "strategy": 4, "innovation": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Focus on discounts instead of loyalty rewards",
+        "feedback": "This simplifies implementation but may not foster long-term loyalty.",
+        "impact": { "strategy": 1, "innovation": -1 }
+      },
+      {
+        "id": "D",
+        "text": "Engage customers to co-create the program",
+        "feedback": "This ensures alignment with customer needs but extends the timeline.",
+        "impact": { "teamwork": 4, "strategy": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Delay the program until financial concerns are resolved",
+        "feedback": "This avoids immediate costs but risks losing competitive edge.",
+        "impact": { "strategy": -1, "innovation": -2 }
+      }
+    ]
+  },
   
 ];
 
