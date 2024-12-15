@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { getRandomScenario, type Scenario } from "@/data/scenarios";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "@/hooks/use-toast";
 
 interface ScenarioCardProps {
   onDecision: (impacts: Record<string, number>) => void;
@@ -10,7 +10,6 @@ interface ScenarioCardProps {
 const ScenarioCard = ({ onDecision }: ScenarioCardProps) => {
   const [hasChosen, setHasChosen] = useState(false);
   const [currentScenario, setCurrentScenario] = useState<Scenario>(getRandomScenario());
-  const { toast } = useToast();
 
   const handleChoice = (choice: typeof currentScenario.choices[0]) => {
     setHasChosen(true);
@@ -20,9 +19,9 @@ const ScenarioCard = ({ onDecision }: ScenarioCardProps) => {
     Object.entries(choice.impact).forEach(([skill, value]) => {
       if (value > 0) {
         toast({
-          title: "Skill Improved!",
-          description: `Your ${skill.charAt(0).toUpperCase() + skill.slice(1)} score has increased by ${value} points!`,
-          duration: 3000,
+          title: `${skill.charAt(0).toUpperCase() + skill.slice(1)} Improved!`,
+          description: `Your ${skill} score has increased by ${value} points!`,
+          variant: "default",
         });
       }
     });

@@ -27,6 +27,8 @@ const StatsChart = ({ stats }: StatsChartProps) => {
               borderRadius: '8px',
               color: '#FFFFFF'
             }}
+            labelStyle={{ color: '#FFFFFF' }}
+            itemStyle={{ color: '#FFFFFF' }}
           />
           <Line
             type="monotone"
