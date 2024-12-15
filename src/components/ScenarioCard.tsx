@@ -36,7 +36,7 @@ const ScenarioCard = ({ onDecision }: ScenarioCardProps) => {
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-semibold">{currentScenario.title}</h3>
-      <p className="text-game-foreground">{currentScenario.description}</p>
+      <p className="text-game-foreground/50">{currentScenario.description}</p>
       
       <div className="space-y-3 mt-4">
         {currentScenario.choices.map((choice) => (
