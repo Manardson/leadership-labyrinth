@@ -1117,6 +1117,376 @@ export const scenarios: Scenario[] = [
       }
     ]
   },
+  {
+    "id": 40,
+    "title": "Leadership Succession Planning",
+    "description": "Your company is preparing for the retirement of a key senior leader. While one internal candidate has strong operational skills, another is known for innovative thinking but lacks experience. How do you approach succession planning?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Promote the operational candidate",
+        "feedback": "This ensures stability but might limit innovation in the long run.",
+        "impact": { "leadership": 3, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Choose the innovative candidate",
+        "feedback": "This brings fresh ideas but may require significant mentorship and support.",
+        "impact": { "leadership": 2, "innovation": 4 }
+      },
+      {
+        "id": "C",
+        "text": "Create a dual leadership structure",
+        "feedback": "This promotes collaboration but risks unclear decision-making.",
+        "impact": { "teamwork": 3, "strategy": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Hire an external candidate",
+        "feedback": "This introduces new perspectives but could disrupt team dynamics.",
+        "impact": { "strategy": 2, "innovation": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Delay the decision and rotate responsibilities",
+        "feedback": "This allows more evaluation but may slow down operations.",
+        "impact": { "leadership": -1, "teamwork": -2 }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Crisis Management Drill",
+    "description": "Your company is planning a crisis management drill to test readiness for emergencies. Some team members worry it will disrupt current workflows, while others see it as essential preparation. What is your decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Conduct the drill as planned",
+        "feedback": "This ensures preparedness but might disrupt ongoing projects.",
+        "impact": { "leadership": 4, "strategy": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Postpone the drill until a slower period",
+        "feedback": "This minimizes disruption but delays readiness.",
+        "impact": { "strategy": 2, "teamwork": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Scale down the scope of the drill",
+        "feedback": "This balances disruption and preparation but may not fully test readiness.",
+        "impact": { "strategy": 3, "teamwork": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Focus only on critical teams for the drill",
+        "feedback": "This ensures key teams are prepared but leaves others less equipped.",
+        "impact": { "teamwork": 2, "strategy": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Cancel the drill and rely on theoretical training",
+        "feedback": "This avoids disruption but may lead to untested procedures in emergencies.",
+        "impact": { "strategy": -2, "leadership": -1 }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Social Responsibility Program",
+    "description": "Your company has received an opportunity to sponsor a large social responsibility project. While this aligns with company values, it requires a substantial budget allocation that could impact operational goals. What do you decide?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Approve the sponsorship immediately",
+        "feedback": "This boosts brand reputation but stretches financial resources.",
+        "impact": { "leadership": 3, "strategy": 1 }
+      },
+      {
+        "id": "B",
+        "text": "Decline the sponsorship",
+        "feedback": "This preserves finances but risks losing goodwill in the community.",
+        "impact": { "strategy": -1, "teamwork": -2 }
+      },
+      {
+        "id": "C",
+        "text": "Seek partial funding from partners",
+        "feedback": "This reduces cost impact but requires additional coordination.",
+        "impact": { "teamwork": 3, "strategy": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Support a smaller initiative instead",
+        "feedback": "This aligns with values but may seem less impactful.",
+        "impact": { "strategy": 2, "leadership": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Delay the decision for further budget review",
+        "feedback": "This allows time for planning but risks losing the opportunity.",
+        "impact": { "strategy": -2, "teamwork": -1 }
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Expanding Product Lines",
+    "description": "Your R&D team has proposed launching a new product line that could open up new markets. However, this requires diverting resources from existing successful products. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Invest fully in the new product line",
+        "feedback": "This could drive growth but risks undermining current strengths.",
+        "impact": { "strategy": 4, "innovation": 5 }
+      },
+      {
+        "id": "B",
+        "text": "Focus on existing products for stability",
+        "feedback": "This preserves current success but may miss future opportunities.",
+        "impact": { "strategy": 1, "leadership": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Test the new product line in a pilot market",
+        "feedback": "This minimizes risk but delays broader rollout.",
+        "impact": { "strategy": 3, "innovation": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Develop the new line with a smaller budget",
+        "feedback": "This reduces financial risk but might compromise product quality.",
+        "impact": { "innovation": 2, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Seek external funding for the new product",
+        "feedback": "This offsets costs but might reduce control over the project.",
+        "impact": { "strategy": 3, "teamwork": 1 }
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Handling Internal Fraud",
+    "description": "An internal audit has revealed minor financial irregularities in one department. While the issue doesn’t appear systemic, it raises questions about oversight and accountability. What is your approach?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Launch a full investigation across all departments",
+        "feedback": "This ensures transparency but could disrupt regular operations.",
+        "impact": { "leadership": 4, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Address the issue quietly within the department",
+        "feedback": "This minimizes disruption but may seem like favoritism.",
+        "impact": { "teamwork": 2, "leadership": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Implement stricter oversight company-wide",
+        "feedback": "This improves accountability but increases administrative burdens.",
+        "impact": { "strategy": 3, "teamwork": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Involve external auditors for transparency",
+        "feedback": "This builds trust but may incur additional costs.",
+        "impact": { "strategy": 2, "leadership": 3 }
+      },
+      {
+        "id": "E",
+        "text": "Dismiss the issue as an isolated incident",
+        "feedback": "This avoids immediate disruption but risks recurring issues.",
+        "impact": { "strategy": -1, "teamwork": -2 }
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Employee Retention Strategy",
+    "description": "Your company is experiencing a higher-than-average turnover rate. Some leaders propose implementing monetary incentives, while others believe investing in training and career development programs will have a more lasting impact. What is your approach?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Offer immediate monetary bonuses",
+        "feedback": "This provides a quick morale boost but may not address long-term retention challenges.",
+        "impact": { "leadership": 3, "teamwork": 1 }
+      },
+      {
+        "id": "B",
+        "text": "Invest in career development programs",
+        "feedback": "This builds long-term loyalty but requires significant resources upfront.",
+        "impact": { "leadership": 4, "innovation": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Conduct exit interviews to understand turnover causes",
+        "feedback": "This helps identify root issues but may delay immediate action.",
+        "impact": { "strategy": 3, "teamwork": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Improve work-life balance policies",
+        "feedback": "This addresses common concerns but requires changes across teams.",
+        "impact": { "teamwork": 4, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Focus on hiring more replacements quickly",
+        "feedback": "This ensures staffing needs but does not address retention challenges.",
+        "impact": { "strategy": -1, "teamwork": -2 }
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Cross-Functional Collaboration",
+    "description": "A cross-functional project is facing delays due to communication gaps between departments. Team leaders have proposed creating a dedicated collaboration task force, but some employees feel this adds unnecessary bureaucracy. What’s your solution?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Form a dedicated collaboration task force",
+        "feedback": "This ensures coordination but may slow down decision-making.",
+        "impact": { "teamwork": 4, "leadership": 3 }
+      },
+      {
+        "id": "B",
+        "text": "Improve communication tools and protocols",
+        "feedback": "This addresses the root issue but requires team buy-in.",
+        "impact": { "teamwork": 3, "innovation": 2 }
+      },
+      {
+        "id": "C",
+        "text": "Appoint a single cross-department leader",
+        "feedback": "This provides clear direction but risks overloading one individual.",
+        "impact": { "leadership": 4, "strategy": 1 }
+      },
+      {
+        "id": "D",
+        "text": "Host regular interdepartmental meetings",
+        "feedback": "This fosters collaboration but takes time away from daily tasks.",
+        "impact": { "teamwork": 2, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Maintain the current structure and address issues as they arise",
+        "feedback": "This avoids additional layers but risks ongoing delays.",
+        "impact": { "teamwork": -1, "strategy": -2 }
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Ethical Supplier Dilemma",
+    "description": "Your primary supplier has been accused of unethical labor practices. Switching suppliers would align with company values but could result in significant delays and increased costs. What do you do?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Immediately switch to an ethical supplier",
+        "feedback": "This aligns with values but risks operational disruptions.",
+        "impact": { "leadership": 4, "strategy": -1 }
+      },
+      {
+        "id": "B",
+        "text": "Continue with the current supplier while investigating alternatives",
+        "feedback": "This ensures continuity but might harm brand reputation.",
+        "impact": { "strategy": 2, "leadership": -1 }
+      },
+      {
+        "id": "C",
+        "text": "Negotiate with the supplier to improve practices",
+        "feedback": "This promotes change but might not result in immediate improvements.",
+        "impact": { "teamwork": 3, "strategy": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Develop internal solutions to reduce supplier dependency",
+        "feedback": "This reduces long-term risk but requires substantial investment.",
+        "impact": { "innovation": 4, "strategy": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Maintain the current supplier and issue a public statement",
+        "feedback": "This minimizes operational risk but might damage public perception.",
+        "impact": { "strategy": -2, "leadership": -2 }
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Remote Team Bonding",
+    "description": "Your remote team has reported feeling disconnected, which has started to impact productivity. Some suggest hosting in-person retreats, while others believe virtual team-building activities are sufficient. What’s your decision?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Host regular in-person retreats",
+        "feedback": "This strengthens connections but requires significant investment.",
+        "impact": { "teamwork": 4, "leadership": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Implement more virtual team-building activities",
+        "feedback": "This is cost-effective but may not fully address the issue.",
+        "impact": { "teamwork": 3, "innovation": 1 }
+      },
+      {
+        "id": "C",
+        "text": "Create a hybrid bonding approach",
+        "feedback": "This balances in-person and virtual needs but requires careful planning.",
+        "impact": { "leadership": 4, "teamwork": 3 }
+      },
+      {
+        "id": "D",
+        "text": "Survey the team to gather feedback on preferred methods",
+        "feedback": "This ensures buy-in but delays action.",
+        "impact": { "teamwork": 2, "strategy": 1 }
+      },
+      {
+        "id": "E",
+        "text": "Focus solely on productivity tools and workflows",
+        "feedback": "This addresses efficiency but risks further disconnect among team members.",
+        "impact": { "teamwork": -2, "strategy": 2 }
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Cybersecurity Breach Response",
+    "description": "Your company has experienced a minor cybersecurity breach affecting a small group of users. While IT suggests addressing it quietly, the legal team advises issuing a public statement. How do you proceed?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Issue a public statement immediately",
+        "feedback": "This demonstrates accountability but risks drawing unnecessary attention.",
+        "impact": { "leadership": 4, "strategy": 2 }
+      },
+      {
+        "id": "B",
+        "text": "Address the issue internally without public disclosure",
+        "feedback": "This minimizes external scrutiny but might appear as a cover-up if discovered.",
+        "impact": { "strategy": -1, "leadership": -2 }
+      },
+      {
+        "id": "C",
+        "text": "Notify affected users directly and offer remedies",
+        "feedback": "This maintains user trust but requires additional resources.",
+        "impact": { "leadership": 3, "teamwork": 2 }
+      },
+      {
+        "id": "D",
+        "text": "Engage a cybersecurity expert to conduct an audit",
+        "feedback": "This ensures future protection but delays immediate response.",
+        "impact": { "strategy": 3, "innovation": 2 }
+      },
+      {
+        "id": "E",
+        "text": "Develop a comprehensive breach response plan for the future",
+        "feedback": "This enhances readiness but doesn’t address current concerns.",
+        "impact": { "strategy": 2, "teamwork": 1 }
+      }
+    ]
+  },
   
 ];
 
