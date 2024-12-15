@@ -39,7 +39,7 @@ const ScenarioCard = ({ onDecision }: ScenarioCardProps) => {
         {scenario.choices.map((choice) => (
           <div key={choice.id} className="space-y-2">
             <Button
-              className="w-full justify-start text-left h-auto py-3 px-4"
+              className="w-full justify-start text-left h-auto py-3 px-4 text-white"
               variant={hasChosen ? "secondary" : "default"}
               onClick={() => handleChoice(choice.id)}
               disabled={hasChosen}

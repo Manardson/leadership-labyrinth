@@ -13,10 +13,10 @@ export interface GameStats {
 
 const GameDashboard = () => {
   const [stats, setStats] = useState<GameStats>({
-    leadership: 65,
-    teamwork: 70,
-    strategy: 55,
-    innovation: 60,
+    leadership: 40,
+    teamwork: 40,
+    strategy: 40,
+    innovation: 40,
   });
 
   const statCards = [
